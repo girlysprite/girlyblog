@@ -6,7 +6,7 @@
  * @author Hanneke Debie
  * @version 0.1
  */
-package girlyblog.web;
+package girlyblog.web; //Dit geeft tot welke package deze file behoort.
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,7 +31,7 @@ public class GreetingsController {
 
     @RequestMapping("/greeting")
     public String greeting(@RequestParam(value="name", required=false, defaultValue="World") String name, Model model) {
-        model.addAttribute("name", name);
+        model.addAttribute("name", name); //de attribute heet "name" en daar wordt de object (string) name in gestopt.
         logger.info("/greeting called!");
         return "greeting";
     }
