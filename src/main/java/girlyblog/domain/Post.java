@@ -1,12 +1,20 @@
+/**
+ * This class is the basic for the blogpost entities.
+ * <p>It has the info about the title, date and contents. </p>
+ * <p>I can set and get those variables in here.  </p>
+ * @author Hanneke Debie
+ * @version 0.1
+ *
+ **/
 package girlyblog.domain;
 
 import java.time.LocalDateTime;
 
 public class Post {
 
-    private String title;
-    private String body;
-    private LocalDateTime publishDate;
+    private String title;  //de titel van een post
+    private String body;  //de content van de post
+    private LocalDateTime publishDate;  //wanneer het gepost is
 
     public String getBody() {
         return body;
