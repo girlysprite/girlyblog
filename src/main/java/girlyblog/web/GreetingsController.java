@@ -26,7 +26,7 @@ public class GreetingsController {
     elke request method kun je dus definieren met de variabelen die je verwacht te krijgen in de request (zoals name=hanne),
     en als laatste voeg je ook nog de model variabele toe.
     Model is simpel in Spring MVC. Elke request method krijgt een model mee, en die model vul je verder in je request method.
-    Vervolgens wordt deze doorgegeven aan de template.
+    Vervolgens wordt deze doorgegeven aan de template, die alles dan weer kan uitlezen.
      */
 
     @RequestMapping("/greeting")
