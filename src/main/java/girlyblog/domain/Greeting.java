@@ -1,4 +1,4 @@
-package girlyblog.web;
+package girlyblog.domain;
 
 public class Greeting {
 
