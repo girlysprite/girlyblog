@@ -2,12 +2,12 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <html>
 <head>
-    <title>Girlyblog</title>
+    <title>Girlyblog Textbox</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
 <H1>Form</H1>
-<form action="#" th:action="@{/textbox}" th:object="${greeting}" method="post">
+<form action="#" th:action="@{/textbox}" th:object="${textBoxForm}" method="post">
     <p>Id: <input type="text" th:field="*{id}" /></p>
     <p>Message: <input type="text" th:field="*{content}" /></p>
     <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
