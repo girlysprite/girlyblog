@@ -6,8 +6,8 @@
 </head>
 <body>
 	<h1>Result</h1>
-    <p th:text="'id: ' + ${textBoxForm.id}" />
-    <p th:text="'content: ' + ${textBoxForm.content}" />
+    <p th:text="'id: ' + ${textBox.id}" />
+    <p th:text="'content: ' + ${textBox.content}" />
     <a href="/textbox">Submit another message</a>
 </body>
 </html>
