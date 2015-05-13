@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller  //Dit markeert de java class als een controller class.
 
-public class TextBoxControllerx {
+public class TextBoxController {
 
     Logger logger = LoggerFactory.getLogger(getClass());
 
