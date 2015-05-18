@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
 <html>
 <head>
     <title>Girlyblog Textbox</title>
@@ -7,9 +6,9 @@
 </head>
 <body>
 <H1>Form</H1>
-<form action="#" th:action="@{/textbox}" th:object="${textBox}" method="post">
-    <p>Id: <input type="text" th:field="*{id}" /></p>
-    <p>Message: <input type="text" th:field="*{content}" /></p>
+<form action="/textbox" method="post">
+    <p>Id: <input type="text" id="textBox.id" /></p>
+    <p>Message: <input type="text" id="textBox.content" /></p>
     <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
 </form>
 </body>
