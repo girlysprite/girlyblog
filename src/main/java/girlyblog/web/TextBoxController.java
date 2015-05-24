@@ -1,6 +1,6 @@
 package girlyblog.web;
 
-import girlyblog.domain.Greeting;
+import girlyblog.domain.TextBox;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -27,13 +27,13 @@ public class TextBoxController {
 
     @RequestMapping(value = "/textbox", method = RequestMethod.GET)
     public String textBoxForm(Model model) {
-        model.addAttribute("textBox", new Greeting());
+        model.addAttribute("textBox", new TextBox());
         logger.info("textbox shown");
         return "textbox";
     }
 
     @RequestMapping(value="/textbox", method = RequestMethod.POST)
-    public String textBoxSubmit(@ModelAttribute Greeting textBox, Model model) {
+    public String textBoxSubmit(@ModelAttribute TextBox textBox, Model model) {
         model.addAttribute("textBox", textBox);
         logger.info("input given");
         return "result";
